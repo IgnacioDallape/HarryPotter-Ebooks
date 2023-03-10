@@ -12,13 +12,12 @@ root.render(
   <React.StrictMode>
 
     <BrowserRouter> 
-      <NavBar/>
         <Routes>
           <Route exact path="/" element={<Api/>} />
         </Routes>
     </BrowserRouter>
     
-
+    
 
   </React.StrictMode>
 );

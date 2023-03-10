@@ -6,8 +6,8 @@ const Api = () => {
 
     const handleApi = () => {
         fetch('https://www.googleapis.com/books/v1/volumes?q=Harry%20Potter')
-            .then(results => results.json())
-            .then(resultsApi => {
+            .then((results) => results.json())
+            .then((resultsApi) => {
                 setApi(resultsApi.items)
                 console.log(resultsApi)
             })
@@ -23,7 +23,7 @@ const Api = () => {
             <button style={{border:'black 1px solid',padding:'1rem'}} onClick={handleApi}>
                 Clickeame   
             </button>
-            <button style={{border:'black 1px solid',padding:'1rem'}} onClick={setApi}>
+            <button style={{border:'black 1px solid',padding:'1rem'}} onClick={eliminarDatos}>
                 eliminar   
             </button>
         </div>
