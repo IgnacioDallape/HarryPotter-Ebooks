@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Api = () => {
 
@@ -19,6 +20,7 @@ const Api = () => {
 
   return (
     <>
+
         <div style={{padding:'1rem', display: 'flex',justifyContent:'center'}}>
             <button style={{border:'black 1px solid',padding:'1rem'}} onClick={handleApi}>
                 Clickeame   
@@ -32,15 +34,19 @@ const Api = () => {
                 {
                 api.length > 0 && (api.map((item, index) => {
                     return (
-                    <li key={index} style={{ gap: '2rem' }}>
-                        {item.volumeInfo.title.toUpperCase()}
+                        <li>
+                    <Link to = {`/api/${index} `} style={{ gap: '2rem' }}>
+                        {item.volumeInfo.title.toUpperCase()} 
+                    </Link>
                     </li>
                     )
+
+                    
                 }))
                 }
             </ul>
         </div>
-    
+                    
     </>
   )
 }
