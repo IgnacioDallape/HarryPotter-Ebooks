@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams, useSearchParams } from 'react-router-dom'
 
 const Libro1 = (props) => {
-    useParams
+    const id = useParams()
+    const [params, setparams] = useState([])
+
+    useEffect(() => {
+      
+    }, [id])
+    
 
 
   return (

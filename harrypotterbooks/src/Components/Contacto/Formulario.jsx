@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Footer from '../Footer/Footer'
 
 const Formulario = () => {
   return (
+    <>
     <form >
-        <div style={{display:'flex',justifyContent:'center', flexDirection:'column'}} className='container'>
+        <div style={{display:'flex',justifyContent:'center', flexDirection:'column'}} className='container '>
 
         
             <div className="form-row" style={{padding:'1rem', gap:'2rem'}}>
@@ -61,6 +63,8 @@ const Formulario = () => {
             </div>
         </div> 
     </form>
+   
+    </>
   )
 }
 
